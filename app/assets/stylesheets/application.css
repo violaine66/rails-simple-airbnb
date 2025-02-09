@@ -13,3 +13,108 @@
  *= require_tree .
  *= require_self
  */
+.navbar{
+  display: flexbox;
+  height: 60px;
+  background-color: #F8F9FA;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-content {
+  background: #F8F9FA;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  text-align: center; /
+}
+.btn-gradient {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(#167FFB, #0F60C4);
+  border: 1px solid #0F60C4;
+}
+.card{
+  min-height: 545px;
+}
+.card-flat{
+  background: #F8F9FA;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 10px;
+  width: 650px;
+}
+.show{
+ display: flex;
+  justify-content: space-around;
+ }
+.picture{
+  position: relative;
+}
+.card-container{
+  position:absolute;
+  top: 330px;
+  left: 230px;
+}
+.book{
+  position:absolute;
+  top: 330px;
+  right: 230px;
+  }
+.picture img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  background-size: cover;
+  }
+
+.button{
+  background-color: #28A645 ;
+}
+.button a{
+  color: white;
+}
+.card-body .title{
+  font-size: 24px;
+}
+.details{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.more a{
+  text-decoration: none;
+}
+.card-body{
+  background-color: #F8F9FA;
+}
+#card-body-link{
+  background-color: white;
+  border-top: #F8F9FA ;
+}
+.book-form, .link-rs{
+    background: #F8F9FA;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 10px;
+}
+.link-rs{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.card .mb-4 .shadow-sm{
+  height: 100px;
+}

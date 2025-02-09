@@ -1,0 +1,54 @@
+
+<div class="picture">
+  <img src="<%= @flat.picture_url %>">
+</div>
+<div class="relative">
+<div class="show">
+  <div class="card-container">
+          <div class="card-flat">
+            <strong><h2><%= @flat.name %></h2></strong>
+            <%= @flat.address %>
+          </div>
+
+          <div class="card-flat">
+            <h4>A bit more about this flat...</h4>
+            <%= @flat.description %>
+          </div>
+
+          <div class="card-flat">
+            <h4>Details</h3>
+              <i class="fa-solid fa-users me-2"></i><%= @flat.number_of_guests %>
+              <i class="fa-solid fa-euro-sign me-2"></i><%= @flat.price_per_night %>
+          </div>
+  </div>
+
+  <div class="book">
+    <div class="book-form">
+       <h5>Book this place !</h5>
+      <div class="mb-3">
+          <label for="formFileMultiple" class="form-label"></label>
+          <input text="to"class="form-control" type="file" id="formFileMultiple" multiple>
+      </div>
+        <div class="mb-3">
+          <label for="formFileMultiple" class="form-label"></label>
+          <input class="form-control" type="file" id="formFileMultiple" multiple>
+        </div>
+        <div class="button">
+          <a class="btn" href="#">Book now</a>
+        </div>
+    </div>
+    <div class="link-rs px-4">
+      <div class="fs-5">Share</div>
+      <div class="rs fs-4">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-square-pinterest"></i>
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+</div>
