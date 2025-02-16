@@ -1,5 +1,5 @@
-<h1 class="me-6">All our Flats (<%= (Flat.count) %>)</h1>
 <div class="container my-3">
+ <h1 class="mb-3"> <%= link_to "All our Flats (#{ Flat.count })", flats_path, class:"text-decoration-none text-dark" %></h1>
   <div class="row">
     <% @flats.each do |flat| %>
       <div class="col-md-4 ps-3">
@@ -37,4 +37,3 @@
        <% end %>
   </div>
 </div>
-

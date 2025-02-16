@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   root to: "flats#home"
   # Defines the root path route ("/")
   # root "posts#index"
-  resources :flats
+  resources :flats 
 end

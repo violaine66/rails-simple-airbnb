@@ -4,7 +4,11 @@ class FlatsController < ApplicationController
   def home
   end
   def index
-    @flats = Flat.all
+    if params[:query].present?
+      @flats = Flat.where("name LIKE ?","%#{params[:query]}%")
+    else
+      @flats = Flat.all
+    end
   end
 
   def show
@@ -32,13 +36,13 @@ class FlatsController < ApplicationController
     else
       render :edit, status: :unprocessable_entity
     end
+  end
 
     def destroy
       @flat = Flat.find(params[:id])
       @flat.destroy
       redirect_to flat_path(@flat), status: :see_other
     end
-  end
 
   private
 
